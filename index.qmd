@@ -1,0 +1,178 @@
+---
+title: "CAIP App & GP Practice Similarities Model"
+subtitle: "Empowering PCNs Using Public Data"
+author: "Paul Johnson"
+---
+
+## Introduction {.center}
+
+<br>
+🧪 Principal Data Scientist - Population Health Analytics
+<br>
+
+<br>
+⚕️💊 NHS South, Central and West CSU (SCW)
+<br>
+
+<br>
+📈 Previously a Quantitative Political Scientist at University of Houston, Texas
+<br>
+
+
+# The Problem {data-background-color="#425563" data-verticator="#E8EDEE"}
+
+Public Data is "Available" but Not "Accessible"
+
+## Capacity and Access Improvement {.center}
+
+- PCNs qualify for a Capacity and Access Improvement Payment if they can demonstrate improvement (or high achievement) in three areas:
+  - Patient experience
+  - Ease of access
+  - Demand management
+- They must undertake "trend analysis" on GP Patient Survey (GPPS) data over the last five years to qualify
+- They are struggling to do this, for several reasons
+
+## Access to GPPS & FFT Data {.center}
+
+- GP Patient Survey and Friends & Family Test (FFT) data is publicly available but difficult to work with
+- This makes it difficult (and time-consuming) for PCNs to access the data, let alone analyse it
+- Wrangling Excel spreadsheets is time-consuming and painful - this is a problem across the entire NHS!
+
+## Limited Analytics Capabilities {.center}
+
+- Not all PCNs have the capabilities to carry out the required analysis, especially given the difficulty accessing the data
+- This is especially the case if they do not have their own data analysts
+- They may be missing out on vital funding
+- How do PCNs make best use of what is available?
+
+# The Solution {data-background-color="#425563" data-verticator="#E8EDEE"}
+
+PCN Capacity & Access Improvement Payment (CAIP) App
+
+## Making the Data & Analysis Accessible {.center}
+
+- We created an app that makes it easier for PCNs to access the GPPS & FFT data 
+- The app includes visualisations of trends, with simple, user-friendly customisation
+- This significantly reduces the effort required to turn this very useful but inaccessible data into real value for PCNs
+
+## [CAIP App](https://rconnect-public.scwcsu.nhs.uk/caip/) UI {.center}
+
+![](man/figures/caip-screenshot.png)
+
+## Visualising GPPS Data {.center}
+
+![](man/figures/gpps-example.png)
+
+
+## Visualising FFT Data {.center}
+
+![](man/figures/fft-example.png)
+
+## Enabling PCNs Beyond the App {.center}
+
+- The app itself is a useful snapshot of national, regional, ICB, PCN, and GP practice performance, but making this data as valuable as possible involves enabling PCNs to use it outside the app too
+
+- Everything shown to the user is downloadable, and the data is formatted such that it should significantly reduce PCN workloads
+- Everything is open source - an increasing priority in the NHS [@goldacre2022]
+
+
+# GP Practice Similarities Model {data-background-color="#425563" data-verticator="#E8EDEE"}
+
+Addressing the CAIP App's Limitations
+
+## Analysis Without Comparison {.center}
+
+- The CAIP app is a good start, but it lacks meaningful comparisons
+- How do you know a GP practice is performing well (or not) without comparing against other GP practices?
+- Comparing against national averages, or other GP practices in the local area, is limited at best
+
+## Comparisons Using Public Data {.center}
+
+- We sought to make comparisons between practices based on factors that were likely to impact their performance and the challenges they face: 
+
+:::: {.columns .small}
+
+::: {.column width="33%"}
+- Patients:
+  - Proportion Male/Female
+  - Age Group Proportions
+  - Approx Mean Age
+:::
+
+::: {.column width="33%"}
+- Staff:
+  - Total Staff & Breakdowns
+  - Staff/Patient Ratios
+:::
+
+::: {.column width="33%"}
+- Socioeconomic Factors:
+  - Rural-Urban Classification (RUC)
+  - Deprivation (IMD)
+:::
+
+::::
+
+- While some of the features were engineered, all of the data is publicly available
+
+## Clustering GP Practices {.center}
+
+- Using K-Means clustering, we were able to group GP practices into three clusters:
+  - **Urban - High Deprivation**
+  - **Urban - Mid- to Low-Deprivation**
+  - **Rural**
+
+- Evaluation metrics & validation against GPPS data support our findings
+- Clusters are also consistent with existing academic research [@booth2021]
+
+
+
+# Next Steps {data-background-color="#425563" data-verticator="#E8EDEE"}
+
+Extending the Capability of the App & Model
+
+## Incorporating Clusters into the CAIP App {.center}
+
+- We will enhance the CAIP app using the GP Practice Similarities Model:
+  - Visualising GP practice performance with comparisons against the average performance of their cluster
+  - Identifying the $n$ most similar practices using distances within clusters
+  - Making clusters clearly interpretable and using them to help practices frame their performance and the challenges they face
+
+## Extending/Improving the Model {.center}
+
+- There are a wide range of potential use cases in Population Health Analytics and across SCW
+- The model is in the relative early stages of development - it can definitely be improved in future iterations
+- There is a lot of public data that we are not making full use of, whether it be as features in the model or for validation purposes
+  - We plan to explore the use of QOF data and ONS Area Classifications data
+
+## Expanding Access to GPPS & FFT Data {.center}
+
+- Public data should be easier for analysts to access - and it shouldn't require so much work to turn it into something useful!
+- We plan to build an API to make access to the GPPS & FFT data easier
+- It will follow tidy data principles, to ensure it is immediately valuable to analysts
+- In the future, we would like to build R and Python packages for accessing the data
+
+
+
+# Thank You!
+
+Contact:
+<br>
+
+<ul >
+{{< fa solid envelope >}} [paul.johnson50@nhs.net](mailto: paul.johnson50@nhs.net)
+</ul>
+
+
+SCW Data Science:
+<br>
+
+<ul >
+{{< fa brands github >}}[/NHS-South-Central-and-West](https://github.com/nhs-south-central-and-west/)
+</ul>
+
+
+
+## References
+
+
