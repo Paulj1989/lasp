@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "CAIP App & GP Practice Similarities Model",
+    "section": "Introduction",
+    "text": "Introduction\n 🧪 Principal Data Scientist - Population Health Analytics \n ⚕️💊 NHS South, Central and West CSU (SCW) \n 📈 Previously a Quantitative Political Scientist at University of Houston, Texas"
+  },
+  {
+    "objectID": "index.html#capacity-and-access-improvement",
+    "href": "index.html#capacity-and-access-improvement",
+    "title": "CAIP App & GP Practice Similarities Model",
+    "section": "Capacity and Access Improvement",
+    "text": "Capacity and Access Improvement\n\nPCNs qualify for a Capacity and Access Improvement Payment if they can demonstrate improvement (or high achievement) in three areas:\n\nPatient experience\nEase of access\nDemand management\n\nThey must undertake “trend analysis” on GP Patient Survey (GPPS) data over the last five years to qualify\nThey are struggling to do this, for several reasons"
+  },
+  {
+    "objectID": "index.html#access-to-gpps-fft-data",
+    "href": "index.html#access-to-gpps-fft-data",
+    "title": "CAIP App & GP Practice Similarities Model",
+    "section": "Access to GPPS & FFT Data",
+    "text": "Access to GPPS & FFT Data\n\nGP Patient Survey and Friends & Family Test (FFT) data is publicly available but difficult to work with\nThis makes it difficult (and time-consuming) for PCNs to access the data, let alone analyse it\nWrangling Excel spreadsheets is time-consuming and painful - this is a problem across the entire NHS!"
+  },
+  {
+    "objectID": "index.html#limited-analytics-capabilities",
+    "href": "index.html#limited-analytics-capabilities",
+    "title": "CAIP App & GP Practice Similarities Model",
+    "section": "Limited Analytics Capabilities",
+    "text": "Limited Analytics Capabilities\n\nNot all PCNs have the capabilities to carry out the required analysis, especially given the difficulty accessing the data\nThis is especially the case if they do not have their own data analysts\nThey may be missing out on vital funding\nHow do PCNs make best use of what is available?"
+  },
+  {
+    "objectID": "index.html#making-the-data-analysis-accessible",
+    "href": "index.html#making-the-data-analysis-accessible",
+    "title": "CAIP App & GP Practice Similarities Model",
+    "section": "Making the Data & Analysis Accessible",
+    "text": "Making the Data & Analysis Accessible\n\nWe created an app that makes it easier for PCNs to access the GPPS & FFT data\nThe app includes visualisations of trends, with simple, user-friendly customisation\nThis significantly reduces the effort required to turn this very useful but inaccessible data into real value for PCNs"
+  },
+  {
+    "objectID": "index.html#caip-app-ui",
+    "href": "index.html#caip-app-ui",
+    "title": "CAIP App & GP Practice Similarities Model",
+    "section": "CAIP App UI",
+    "text": "CAIP App UI"
+  },
+  {
+    "objectID": "index.html#visualising-gpps-data",
+    "href": "index.html#visualising-gpps-data",
+    "title": "CAIP App & GP Practice Similarities Model",
+    "section": "Visualising GPPS Data",
+    "text": "Visualising GPPS Data"
+  },
+  {
+    "objectID": "index.html#visualising-fft-data",
+    "href": "index.html#visualising-fft-data",
+    "title": "CAIP App & GP Practice Similarities Model",
+    "section": "Visualising FFT Data",
+    "text": "Visualising FFT Data"
+  },
+  {
+    "objectID": "index.html#enabling-pcns-beyond-the-app",
+    "href": "index.html#enabling-pcns-beyond-the-app",
+    "title": "CAIP App & GP Practice Similarities Model",
+    "section": "Enabling PCNs Beyond the App",
+    "text": "Enabling PCNs Beyond the App\n\nThe app itself is a useful snapshot of national, regional, ICB, PCN, and GP practice performance, but making this data as valuable as possible involves enabling PCNs to use it outside the app too\nEverything shown to the user is downloadable, and the data is formatted such that it should significantly reduce PCN workloads\nEverything is open source - an increasing priority in the NHS (Goldacre and Morley 2022)"
+  },
+  {
+    "objectID": "index.html#analysis-without-comparison",
+    "href": "index.html#analysis-without-comparison",
+    "title": "CAIP App & GP Practice Similarities Model",
+    "section": "Analysis Without Comparison",
+    "text": "Analysis Without Comparison\n\nThe CAIP app is a good start, but it lacks meaningful comparisons\nHow do you know a GP practice is performing well (or not) without comparing against other GP practices?\nComparing against national averages, or other GP practices in the local area, is limited at best"
+  },
+  {
+    "objectID": "index.html#comparisons-using-public-data",
+    "href": "index.html#comparisons-using-public-data",
+    "title": "CAIP App & GP Practice Similarities Model",
+    "section": "Comparisons Using Public Data",
+    "text": "Comparisons Using Public Data\n\nWe sought to make comparisons between practices based on factors that were likely to impact their performance and the challenges they face:\n\n\n\n\nPatients:\n\nProportion Male/Female\nAge Group Proportions\nApprox Mean Age\n\n\n\n\nStaff:\n\nTotal Staff & Breakdowns\nStaff/Patient Ratios\n\n\n\n\nSocioeconomic Factors:\n\nRural-Urban Classification (RUC)\nDeprivation (IMD)\n\n\n\n\n\nWhile some of the features were engineered, all of the data is publicly available"
+  },
+  {
+    "objectID": "index.html#clustering-gp-practices",
+    "href": "index.html#clustering-gp-practices",
+    "title": "CAIP App & GP Practice Similarities Model",
+    "section": "Clustering GP Practices",
+    "text": "Clustering GP Practices\n\nUsing K-Means clustering, we were able to group GP practices into three clusters:\n\nUrban - High Deprivation\nUrban - Mid- to Low-Deprivation\nRural\n\nEvaluation metrics & validation against GPPS data support our findings\nClusters are also consistent with existing academic research (Booth et al. 2021)"
+  },
+  {
+    "objectID": "index.html#incorporating-clusters-into-the-caip-app",
+    "href": "index.html#incorporating-clusters-into-the-caip-app",
+    "title": "CAIP App & GP Practice Similarities Model",
+    "section": "Incorporating Clusters into the CAIP App",
+    "text": "Incorporating Clusters into the CAIP App\n\nWe will enhance the CAIP app using the GP Practice Similarities Model:\n\nVisualising GP practice performance with comparisons against the average performance of their cluster\nIdentifying the \\(n\\) most similar practices using distances within clusters\nMaking clusters clearly interpretable and using them to help practices frame their performance and the challenges they face"
+  },
+  {
+    "objectID": "index.html#extendingimproving-the-model",
+    "href": "index.html#extendingimproving-the-model",
+    "title": "CAIP App & GP Practice Similarities Model",
+    "section": "Extending/Improving the Model",
+    "text": "Extending/Improving the Model\n\nThere are a wide range of potential use cases in Population Health Analytics and across SCW\nThe model is in the relative early stages of development - it can definitely be improved in future iterations\nThere is a lot of public data that we are not making full use of, whether it be as features in the model or for validation purposes\n\nWe plan to explore the use of QOF data and ONS Area Classifications data"
+  },
+  {
+    "objectID": "index.html#expanding-access-to-gpps-fft-data",
+    "href": "index.html#expanding-access-to-gpps-fft-data",
+    "title": "CAIP App & GP Practice Similarities Model",
+    "section": "Expanding Access to GPPS & FFT Data",
+    "text": "Expanding Access to GPPS & FFT Data\n\nPublic data should be easier for analysts to access - and it shouldn’t require so much work to turn it into something useful!\nWe plan to build an API to make access to the GPPS & FFT data easier\nIt will follow tidy data principles, to ensure it is immediately valuable to analysts\nIn the future, we would like to build R and Python packages for accessing the data"
+  },
+  {
+    "objectID": "index.html#references",
+    "href": "index.html#references",
+    "title": "CAIP App & GP Practice Similarities Model",
+    "section": "References",
+    "text": "References\n\n\n\n\n\n\nBooth, Frederick G, Raymond R Bond, Maurice D Mulvenna, Brian Cleland, Kieran McGlade, Debbie Rankin, Jonathan Wallace, and Michaela Black. 2021. “Discovering and Comparing Types of General Practitioner Practices Using Geolocational Features and Prescribing Behaviours by Means of k-Means Clustering.” Scientific Reports 11 (1): 18289. https://www.nature.com/articles/s41598-021-97716-3.\n\n\nGoldacre, Ben, and Jessica Morley. 2022. “Better, Broader, Safer: Using Health Data for Research and Analysis.” Department of Health; Social Care. https://www.gov.uk/government/publications/better-broader-safer-using-health-data-for-research-and-analysis."
+  }
+]
