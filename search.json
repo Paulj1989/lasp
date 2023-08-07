@@ -4,21 +4,21 @@
     "href": "index.html#introduction",
     "title": "CAIP App & GP Practice Similarities Model",
     "section": "Introduction",
-    "text": "Introduction\n 🧪 Principal Data Scientist - Population Health Analytics \n ⚕️💊 NHS South, Central and West CSU (SCW) \n 📈 Previously a Quantitative Political Scientist at University of Houston, Texas"
+    "text": "Introduction\n 🧪 Principal Data Scientist - Population Health Analytics \n ⚕️💊 NHS South, Central and West CSU (SCW) \n 📈 Previously a Political Scientist at University of Houston, Texas"
   },
   {
-    "objectID": "index.html#capacity-and-access-improvement",
-    "href": "index.html#capacity-and-access-improvement",
+    "objectID": "index.html#capacity-and-access-payment-cap",
+    "href": "index.html#capacity-and-access-payment-cap",
     "title": "CAIP App & GP Practice Similarities Model",
-    "section": "Capacity and Access Improvement",
-    "text": "Capacity and Access Improvement\n\nPCNs qualify for a Capacity and Access Improvement Payment if they can demonstrate improvement (or high achievement) in three areas:\n\nPatient experience\nEase of access\nDemand management\n\nThey must undertake “trend analysis” on GP Patient Survey (GPPS) data over the last five years to qualify\nThey are struggling to do this, for several reasons"
+    "section": "Capacity and Access Payment (CAP)",
+    "text": "Capacity and Access Payment (CAP)\n\nPCNs can qualify for a Capacity and Access Improvement Payment if they can demonstrate improvement (or high achievement) in three areas:\n\nPatient experience\nEase of access\nAccuracy of appointment records\n\nThey must undertake “trend analysis” of GP Patient Survey (GPPS) data over the last five years to qualify\nSome PCNs are struggling to do this, for several reasons"
   },
   {
     "objectID": "index.html#access-to-gpps-fft-data",
     "href": "index.html#access-to-gpps-fft-data",
     "title": "CAIP App & GP Practice Similarities Model",
     "section": "Access to GPPS & FFT Data",
-    "text": "Access to GPPS & FFT Data\n\nGP Patient Survey and Friends & Family Test (FFT) data is publicly available but difficult to work with\nThis makes it difficult (and time-consuming) for PCNs to access the data, let alone analyse it\nWrangling Excel spreadsheets is time-consuming and painful - this is a problem across the entire NHS!"
+    "text": "Access to GPPS & FFT Data\n\nGP Patient Survey and Friends & Family Test (FFT) data is publicly available but difficult to work with\nThis makes it difficult (and time-consuming) for PCNs to access the data, let alone analyse it\nWrangling Excel spreadsheets can be painful - this is a problem across the entire NHS!"
   },
   {
     "objectID": "index.html#limited-analytics-capabilities",
@@ -60,7 +60,7 @@
     "href": "index.html#enabling-pcns-beyond-the-app",
     "title": "CAIP App & GP Practice Similarities Model",
     "section": "Enabling PCNs Beyond the App",
-    "text": "Enabling PCNs Beyond the App\n\nThe app itself is a useful snapshot of national, regional, ICB, PCN, and GP practice performance, but making this data as valuable as possible involves enabling PCNs to use it outside the app too\nEverything shown to the user is downloadable, and the data is formatted such that it should significantly reduce PCN workloads\nEverything is open source - an increasing priority in the NHS (Goldacre and Morley 2022)"
+    "text": "Enabling PCNs Beyond the App\n\nThe app itself is a useful snapshot of national, regional, ICB, PCN, and GP practice performance, but making this data as valuable as possible involves enabling PCNs to use it outside the app too\nEverything shown to the user is downloadable, and the data is formatted such that it should significantly reduce PCN workloads\nEverything is open-source - an increasing priority in the NHS (Goldacre and Morley 2022)"
   },
   {
     "objectID": "index.html#analysis-without-comparison",
@@ -81,28 +81,28 @@
     "href": "index.html#clustering-gp-practices",
     "title": "CAIP App & GP Practice Similarities Model",
     "section": "Clustering GP Practices",
-    "text": "Clustering GP Practices\n\nUsing K-Means clustering, we were able to group GP practices into three clusters:\n\nUrban - High Deprivation\nUrban - Mid- to Low-Deprivation\nRural\n\nEvaluation metrics & validation against GPPS data support our findings\nClusters are also consistent with existing academic research (Booth et al. 2021)"
+    "text": "Clustering GP Practices\n\nUsing K-Means clustering, we were able to group GP practices into three clusters:\n\nUrban - High Deprivation\nUrban - Mid to Low Deprivation\nRural\n\nEvaluation metrics & validation against GPPS data suggest these are distinct, separable clusters\nClusters are also consistent with existing academic research (Booth et al. 2021)"
   },
   {
     "objectID": "index.html#incorporating-clusters-into-the-caip-app",
     "href": "index.html#incorporating-clusters-into-the-caip-app",
     "title": "CAIP App & GP Practice Similarities Model",
     "section": "Incorporating Clusters into the CAIP App",
-    "text": "Incorporating Clusters into the CAIP App\n\nWe will enhance the CAIP app using the GP Practice Similarities Model:\n\nVisualising GP practice performance with comparisons against the average performance of their cluster\nIdentifying the \\(n\\) most similar practices using distances within clusters\nMaking clusters clearly interpretable and using them to help practices frame their performance and the challenges they face"
+    "text": "Incorporating Clusters into the CAIP App\n\nWe will enhance the CAIP app using the GP Practice Similarities Model:\n\nVisualising GP practice performance with comparisons against the average performance of their cluster\nIdentifying the \\(n\\) most similar practices using distances within clusters\nDetailing what the clusters mean and how they can better illustrate practice performance"
   },
   {
     "objectID": "index.html#extendingimproving-the-model",
     "href": "index.html#extendingimproving-the-model",
     "title": "CAIP App & GP Practice Similarities Model",
     "section": "Extending/Improving the Model",
-    "text": "Extending/Improving the Model\n\nThere are a wide range of potential use cases in Population Health Analytics and across SCW\nThe model is in the relative early stages of development - it can definitely be improved in future iterations\nThere is a lot of public data that we are not making full use of, whether it be as features in the model or for validation purposes\n\nWe plan to explore the use of QOF data and ONS Area Classifications data"
+    "text": "Extending/Improving the Model\n\nThe model is in the relative early stages of development - it can definitely be improved in future iterations\nThere is a lot of public data that we are not making full use of, whether it be as features in the model or for validation purposes\n\nWe plan to explore the use of QOF data and ONS Area Classifications data\n\nThere are a wide range of potential use cases in Population Health Analytics and across SCW"
   },
   {
     "objectID": "index.html#expanding-access-to-gpps-fft-data",
     "href": "index.html#expanding-access-to-gpps-fft-data",
     "title": "CAIP App & GP Practice Similarities Model",
     "section": "Expanding Access to GPPS & FFT Data",
-    "text": "Expanding Access to GPPS & FFT Data\n\nPublic data should be easier for analysts to access - and it shouldn’t require so much work to turn it into something useful!\nWe plan to build an API to make access to the GPPS & FFT data easier\nIt will follow tidy data principles, to ensure it is immediately valuable to analysts\nIn the future, we would like to build R and Python packages for accessing the data"
+    "text": "Expanding Access to GPPS & FFT Data\n\nPublic data should be easier for analysts to access\nWe plan to build an API to make access to the GPPS & FFT data easier\nIt will follow tidy data principles, to ensure it is immediately valuable to analysts\nIn the future, we would like to build R and Python packages for accessing the API"
   },
   {
     "objectID": "index.html#references",
