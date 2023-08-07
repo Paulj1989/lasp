@@ -11,10 +11,10 @@
   "Packages": {
     "renv": {
       "Package": "renv",
-      "Version": "0.15.5",
+      "Version": "1.0.0",
       "Source": "Repository",
       "Repository": "RSPM",
-      "Hash": "6a38294e7d12f5d8e656b08c5bd8ae34",
+      "Hash": "c321cd99d56443dbffd1c9e673c0c1a2",
       "Requirements": []
     }
   }
