@@ -15,7 +15,7 @@ author: "Paul Johnson"
 <br>
 
 <br>
-📈 Previously a Quantitative Political Scientist at University of Houston, Texas
+📈 Previously a Political Scientist at University of Houston, Texas
 <br>
 
 
@@ -23,20 +23,22 @@ author: "Paul Johnson"
 
 Public Data is "Available" but Not "Accessible"
 
-## Capacity and Access Improvement {.center}
+## Capacity and Access Payment (CAP) {.center}
 
-- PCNs qualify for a Capacity and Access Improvement Payment if they can demonstrate improvement (or high achievement) in three areas:
+- PCNs can qualify for a **Capacity and Access _Improvement_ Payment** if they can demonstrate improvement (or high achievement) in three areas:
+
   - Patient experience
   - Ease of access
-  - Demand management
-- They must undertake "trend analysis" on GP Patient Survey (GPPS) data over the last five years to qualify
-- They are struggling to do this, for several reasons
+  - Accuracy of appointment records
+
+- They must undertake "trend analysis" of GP Patient Survey (GPPS) data over the last five years to qualify
+- Some PCNs are struggling to do this, for several reasons
 
 ## Access to GPPS & FFT Data {.center}
 
 - GP Patient Survey and Friends & Family Test (FFT) data is publicly available but difficult to work with
 - This makes it difficult (and time-consuming) for PCNs to access the data, let alone analyse it
-- Wrangling Excel spreadsheets is time-consuming and painful - this is a problem across the entire NHS!
+- Wrangling Excel spreadsheets can be painful - this is a problem across the entire NHS!
 
 ## Limited Analytics Capabilities {.center}
 
@@ -73,7 +75,7 @@ PCN Capacity & Access Improvement Payment (CAIP) App
 - The app itself is a useful snapshot of national, regional, ICB, PCN, and GP practice performance, but making this data as valuable as possible involves enabling PCNs to use it outside the app too
 
 - Everything shown to the user is downloadable, and the data is formatted such that it should significantly reduce PCN workloads
-- Everything is open source - an increasing priority in the NHS [@goldacre2022]
+- Everything is open-source - an increasing priority in the NHS [@goldacre2022]
 
 
 # GP Practice Similarities Model {data-background-color="#425563" data-verticator="#E8EDEE"}
@@ -119,10 +121,10 @@ Addressing the CAIP App's Limitations
 
 - Using K-Means clustering, we were able to group GP practices into three clusters:
   - **Urban - High Deprivation**
-  - **Urban - Mid- to Low-Deprivation**
+  - **Urban - Mid to Low Deprivation**
   - **Rural**
 
-- Evaluation metrics & validation against GPPS data support our findings
+- Evaluation metrics & validation against GPPS data suggest these are distinct, separable clusters
 - Clusters are also consistent with existing academic research [@booth2021]
 
 
@@ -136,21 +138,21 @@ Extending the Capability of the App & Model
 - We will enhance the CAIP app using the GP Practice Similarities Model:
   - Visualising GP practice performance with comparisons against the average performance of their cluster
   - Identifying the $n$ most similar practices using distances within clusters
-  - Making clusters clearly interpretable and using them to help practices frame their performance and the challenges they face
+  - Detailing what the clusters mean and how they can better illustrate practice performance 
 
 ## Extending/Improving the Model {.center}
 
-- There are a wide range of potential use cases in Population Health Analytics and across SCW
 - The model is in the relative early stages of development - it can definitely be improved in future iterations
 - There is a lot of public data that we are not making full use of, whether it be as features in the model or for validation purposes
   - We plan to explore the use of QOF data and ONS Area Classifications data
+- There are a wide range of potential use cases in Population Health Analytics and across SCW
 
 ## Expanding Access to GPPS & FFT Data {.center}
 
-- Public data should be easier for analysts to access - and it shouldn't require so much work to turn it into something useful!
+- Public data should be easier for analysts to access
 - We plan to build an API to make access to the GPPS & FFT data easier
 - It will follow tidy data principles, to ensure it is immediately valuable to analysts
-- In the future, we would like to build R and Python packages for accessing the data
+- In the future, we would like to build R and Python packages for accessing the API
 
 
 
